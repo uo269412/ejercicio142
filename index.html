@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tiempo en tres localidades</title>
+        <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Ejercicio14.js"></script>
+    </head>
+    <body onload="dibujo.loader()">
+        <h1>Encasillando figuras</h1>
+        <section>
+            <button type = "button" id = "pantallaCompleta" onClick="modificadorPantalla.pantallaCompleta()"> Acceder a pantalla completa </button>
+            <p>Este juego consiste en mover las figuras negras a las distintas columnas, acorde al color indicado por las figuras.</p>         
+        </section>
+        <section>
+            <h2>Leyenda</h2>
+            <canvas id="canvas" width="1500" height="250"/>
+        </section>
+            <section id="container" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+                <h2>Tabla</h2>
+                <div class="padre">
+                  <div class="tipo" id="Cuadrado" ondrop = "arrastrar.drop(event)" ondragover="arrastrar.allowDrop(event)"></div>
+                  <div class="tipo" id="Triangulo" ondrop = "arrastrar.drop(event)" ondragover="arrastrar.allowDrop(event)"></div>
+                  <div class="tipo" id="Circulo" ondrop = "arrastrar.drop(event)" ondragover="arrastrar.allowDrop(event)"></div>
+                </div>  
+                <img class="imagen" src="multimedia/cuadrado.png" name = "Cuadrado" alt = "Cuadrado" draggable="true" ondragstart="arrastrar.drag(event)" id="drag1"/>
+                <img class="imagen" src="multimedia/circulo.png" name = "Circulo" alt = "Circulo" draggable="true" ondragstart="arrastrar.drag(event)" id="drag2"/>
+                <img class="imagen" src="multimedia/triangulo.png" name = "Triangulo" alt = "Triangulo" draggable="true" ondragstart="arrastrar.drag(event)" id="drag3"/>
+                <img class="imagen" src="multimedia/circulo.png" name = "Circulo" alt = "Circulo" draggable="true" ondragstart="arrastrar.drag(event)" id="drag4"/>
+                <img class="imagen" src="multimedia/triangulo.png" name = "Triangulo" alt = "Triangulo" draggable="true" ondragstart="arrastrar.drag(event)" id="drag5"/>
+                <img class="imagen" src="multimedia/triangulo.png" name = "Triangulo" alt = "Triangulo" draggable="true" ondragstart="arrastrar.drag(event)" id="drag6"/>
+                <img class="imagen" src="multimedia/cuadrado.png" name = "Cuadrado" alt = "Cuadrado" draggable="true" ondragstart="arrastrar.drag(event)" id="drag7"/>
+                <img class="imagen" src="multimedia/circulo.png" name = "Circulo" alt = "Circulo" draggable="true" ondragstart="arrastrar.drag(event)" id="drag8"/>
+                <img class="imagen" src="multimedia/triangulo.png" name = "Triangulo" alt = "Triangulo" draggable="true" ondragstart="arrastrar.drag(event)" id="drag9"/>
+            </section>
+            <div id="resultado">Resultado</div>
+    </body>
+</html>

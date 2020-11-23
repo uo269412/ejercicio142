@@ -1,0 +1,62 @@
+/*001*/
+body {
+  font-family: "Optima", sans-serif;
+  padding:6px;
+  font-size:16px;
+  background-color:rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+}
+/*001*/
+h1 {
+  color:rgb(0, 0, 0);
+  text-transform: uppercase;
+  padding: 120px 10px;
+  text-align: left; 
+  font-size: 400%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  text-align: center;
+}
+
+button {
+  border-radius: 1em;
+  background-color: rgb(0, 0, 0);
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#container {
+    width: 1000px;
+    height: 350px;
+    margin: 0 auto;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .padre {  
+    width: 1000px;
+    height: 120px;
+    display: flex;
+  }
+  .tipo {
+   flex-grow: 1;
+  }
+  #Triangulo {
+   background-color: #ff4c4c;
+  }
+  #Cuadrado {
+    background-color: #42ccff;
+  }
+  #Circulo {
+    background-color: #48db35;
+  }
+  #resultado {
+    text-align: center;
+    font-size: 30px;
+  }
+  .imagen {
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  
